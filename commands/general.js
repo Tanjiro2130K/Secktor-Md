@@ -91,13 +91,9 @@
    category: "general",
    filename: __filename
  }, async (Void, citel) => {
-   let { data } = await axios.get("https://api.github.com/repos/SamPandey001/Secktor-Md");
+   let { data } = await axios.get("https://github.com/rutgerfarry/markhub_notes/blob/master/Japanese%20Culture%20Notes.md");
    let cap = `Hey ${citel.pushName}\n
-   *⭐ Total Stars:* ${data.stargazers_count} stars
-   *🍽️ Forks:* ${data.forks_count} forks
-   *🍁 Repo:* citel-x.herokuapp.com/repo
-   *Group:* citel-x.herokuapp.com/support
-   *Deploy Your Own:* citel-x.herokuapp.com`;
+   na na na 😂`;
    let buttonMessage = {
      image: { url: await botpic() },
      caption: cap,
